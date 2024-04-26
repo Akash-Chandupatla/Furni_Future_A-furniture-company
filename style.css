@@ -26,7 +26,6 @@ body img {
     padding: 0.8rem 2rem;
     border-radius: 20px;
     color: #424242;
-    width: 30;
     font-weight: bold;
     cursor: pointer;
 }
@@ -35,6 +34,10 @@ body img {
 header .left {
     text-align: center;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header .left .title {
@@ -47,18 +50,11 @@ header .left .title {
     font-weight: 900;
 }
 
-header .left .title h2{
+header .left .title h2 {
     padding: 0.5rem;
 }
 
-header .left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-header .left .search{
+header .left .search {
     margin-bottom: 1rem;
     width: 60%;
     border: 2px solid black;
@@ -77,7 +73,7 @@ header .search input[type="text"] {
     outline: none;
 }
 
-header .search img{
+header .search img {
     margin: 0.2rem 0.5rem;
     width: 20px;
     height: auto;
@@ -140,14 +136,15 @@ main .one ul li img {
     margin: 1rem;
 }
 
-main .one a {
-    margin: 2rem 6rem 0 6rem;
-    text-decoration: none;
+main .one .total .button {
+    margin: 2rem 4rem;
     display: flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    text-decoration: none;
     background-color: #ffd89e;
     font-size: 1rem;
-    font-weight: bold;
 }
 
 main .one .right {
@@ -276,6 +273,10 @@ main .five .right ul {
     text-align: start;
 }
 
+main .five .right h4 {
+    font-weight: 500;
+}
+
 main .five .right ul img {
     width: 30px;
 }
@@ -285,7 +286,7 @@ main .five .right ul li {
 }
 
 main .five .button {
-    background-color: #ffc940;
+    background-color: #ffffff;
 }
 
 /* TODO: Section Six */
@@ -383,11 +384,11 @@ main .eight .profiles .profile {
     border-radius: 10px;
     display: grid;
     grid-template-columns: 30% 70%;
+    place-items: center;
     background-color: #fff;
 }
 
 main .eight .profiles .profile .left img {
-    margin: 1rem 0;
     width: 65%;
 }
 
@@ -507,13 +508,199 @@ footer .right .feature ul li {
     padding: 0.5rem 0;
 }
 
-footer .right .feature ul li img{
+footer .right .feature ul li img {
     width: 30px;
 }
 
 /* TODO: Media QUERIES */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
 
+    /* TODO: Header */
+    header .left {
+        margin: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
+    header .left .title {
+        margin: 0;
+        padding: 0;
+    }
+
+    header .left .title img {
+        width: 50px;
+        padding-right: 0.7rem;
+    }
+
+    header .left .title h2 {
+        padding: 0;
+        font-size: 1.3rem;
+    }
+
+    header .left .search {
+        margin: 0;
+        width: 20%;
+    }
+
+    /* TODO: Section One */
+
+    main .one {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-self: center;
+        place-items: center;
+    }
+
+    main .one .left {
+        text-align: start;
+    }
+
+    main .one .left h1 {
+        padding: 0 1rem;
+    }
+
+    main .one .left p,
+    h2,
+    h2,
+    h4,
+    h1 {
+        padding: 1rem;
+    }
+
+    main .one .right {
+        background-color: #ffd89e;
+        width: 300px;
+        height: 300px;
+        margin: 2rem 2rem;
+        padding-top: 1rem;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    main .one .right img {
+        width: 85%;
+    }
+
+    /* TODO: Section Two */
+
+    main .two .info .right .chairs {
+        display: flex;
+    }
+
+    /* TODO: Section three */
+
+    main .three .occasion {
+        display: flex;
+    }
+
+    main .three .occasion img {
+        width: 25%;
+    }
+
+    main .three .occasion p {
+        padding: 1rem;
+    }
+
+    main .four .woodchairs {
+        display: flex;
+        margin: 1rem;
+    }
+
+    /* TODO: Section four */
+
+    main .four .woodchairs .woodchair {
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+
+    main .four .woodchairs .woodchair img {
+        width: 70%;
+    }
+
+    /* TODO: Section five */
+
+    main .five .left .image {
+        display: grid;
+        place-items: center;
+        margin: 1rem 1rem;
+        border: none;
+        border-radius: 10px;
+    }
+
+    main .five .left .image img {
+        width: 60%;
+        border: 2px solid grey;
+        border-radius: 10px;
+    }
+
+    main .five .right ul {
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* TODO: Section six */
+    main .six .items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main .six .items .item img {
+        width: 200px;
+    }
+
+    /* TODO: Section Seven */
+    main .seven .top img {
+        width: 70%;
+        padding: 3rem 0;
+    }
+
+    /* TODO: Section Eight */
+    main .eight .profiles .top,
+    .middle,
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .eight .profiles .profile {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        place-items: center;
+        width: 60%;
+    }
+
+    main .eight .profiles .profile .left img {
+        width: 60%;
+    }
+
+    /* TODO: Section Nine */
+    main .nine .blogs {
+        display: flex;
+    }
+
+    main .nine .blogs .blog {
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+
+    main .nine .blogs .blog h4 {
+        padding: 0.5rem;
+    }
+
+    /* TODO: Section Ten */
+    main .ten .collections {
+        display: flex;
+    }
+
+    footer .twelve .right{
+        display: flex;
+    }
 }
+
+@media screen and (min-width: 1200px) {}
