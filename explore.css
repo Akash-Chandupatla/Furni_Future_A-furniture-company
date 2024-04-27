@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #0C2929;
+}
+
+/* Temporary Styling */
+body img {
+    width: 5rem;
+}
+
+/* TODO: Styling all buttons */
+.button {
+    display: inline-block;
+    border: none;
+    background: #ffd89e;
+    margin: 1rem;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    color: #424242;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* TODO: header section */
+header .left {
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .left .title {
+    margin: 2rem 0.5rem;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+header .left .title h2 {
+    padding: 0.5rem;
+}
+
+header .left .search {
+    margin-bottom: 1rem;
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .search input[type="text"] {
+    width: 100%;
+    height: 3.5vh;
+    padding-left: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+header .search img {
+    margin: 0.2rem 0.5rem;
+    width: 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+header .left ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header .left ul li {
+    padding: 1rem;
+}
+
+main .thirteen .total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+main .thirteen .total .sofa {
+    background-color: #ffd89e;
+    margin: 0 2rem 2rem 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+main .thirteen .total .sofa img {
+    width: 100%;
+}
+
+main .thirteen .total .middle {
+    margin: 0 2rem 2rem 2rem;
+    padding: 1rem;
+}
+
+main .thirteen .total .middle img {
+    width: 100%;
+}
+
+main .thirteen .total .right {
+    margin: 0 1rem;
+    height: 70vh;
+    height: 70svh;
+    overflow: scroll;
+}
+
+main .thirteen .total .right h1,
+p {
+    padding: 1rem 0;
+}
+
+main .thirteen .total .right .features .feature {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+main .thirteen .total .right .features .feature img {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+main .thirteen .total .right h2 {
+    padding: 1rem 0;
+}
+
+main .thirteen .total .right .colors ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding-bottom: 2rem;
+}
+
+main .thirteen .total .right .colors ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+main .thirteen .total .right .colors .color1 {
+    background-color: #7a4024;
+}
+
+main .thirteen .total .right .colors .color2 {
+    background-color: #b33a31;
+}
+
+main .thirteen .total .right .colors .color3 {
+    background-color: #7a6d24;
+}
+
+main .thirteen .total .right .colors .color4 {
+    background-color: #467a24;
+}
+
+main .thirteen .total .right .colors .color5 {
+    background-color: #246d7a;
+}
+
+main .thirteen .total .right .colors .color6 {
+    background-color: #243b7a;
+}
+
+main .thirteen .total .right .colors .color7 {
+    background-color: #73247a;
+}
+
+main .thirteen .total .right .about ul li {
+    display: list-item;
+    list-style-type: disc;
+    padding: 0.5rem;
+}
+
+main .fourteen {
+    margin: 1rem;
+}
+
+main .fourteen h2 {
+    padding: 1rem;
+}
+
+main .fourteen table {
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+main .fourteen table th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    text-align: center;
+}
+
+main .fourteen table thead {
+    background-color: #e4f0f5;
+    font-size: 1rem;
+}
+
+main .fifteen h2 {
+    padding: 1rem;
+}
+
+main .fifteen .chairs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+main .fifteen .chairs .chair {
+    margin: 0 2rem 2rem 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .fifteen .chairs .chair .sofa {
+    background-color: #ffd89e;
+    border-radius: 20px;
+}
+
+main .fifteen .chairs .chair .sofa img {
+    width: 100%;
+}
+
+main .fifteen .chairs .chair h4 {
+    padding: 1rem;
+    text-align: center;
+}
+
+main .sixteen {
+    display: none;
+}
+
+main .seventeen .total .left {
+    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+main .seventeen .left .ratings .rating p {
+    padding: 0.5rem 1rem;
+}
+
+main .seventeen .left .ratings .rating {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    place-items: center;
+}
+
+main .seventeen .total .left .ratings .rating .rate {
+    height: 1.5vh;
+    width: 190px;
+    border-radius: 15px;
+    background: #bdbdbd;
+}
+
+main .seventeen .left .ratings .rating .rate5 {
+    height: 1.5vh;
+    width: 90px;
+    border-radius: 15px;
+    background: #94656d;
+}
+
+main .seventeen .left .ratings .rating .rate4 {
+    height: 1.5vh;
+    width: 120px;
+    border-radius: 15px;
+    background: #94656d;
+}
+
+main .seventeen .left .ratings .rating .rate3 {
+    height: 1.5vh;
+    width: 20px;
+    border-radius: 15px;
+    background: #94656d;
+}
+
+main .seventeen .left .ratings .rating .rate2 {
+    height: 1.5vh;
+    width: 40px;
+    border-radius: 15px;
+    background: #94656d;
+}
+
+main .seventeen .left .ratings .rating .rate1 {
+    height: 1.5vh;
+    width: 20px;
+    border-radius: 15px;
+    background: #94656d;
+}
+
+main .seventeen .rightall {
+    margin: 3rem 2rem;
+    padding: 0 1rem;
+    border-radius: 20px;
+}
+
+main .seventeen .rightall h1,
+h4 {
+    text-align: center;
+}
+
+main .seventeen .rightall .profiles {
+    display: flex;
+    flex-direction: column;
+}
+
+main .seventeen .rightall .profiles .profile {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border: 2px solid gray;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    place-items: center;
+    background-color: #fff;
+}
+
+main .seventeen .rightall .profiles .profile .left img {
+    width: 50px
+}
+
+main .seventeen .rightall .profiles .profile .right h3 {
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* TODO: Media QUERIES */
+
+@media screen and (min-width: 750px) {
+
+    /* TODO: Header */
+    header .left {
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+
+    header .left .title {
+        margin: 0;
+        padding: 0;
+    }
+
+    header .left .title img {
+        width: 50px;
+        padding-right: 0.7rem;
+    }
+
+    header .left .title h2 {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    header .left .search {
+        margin: 0;
+        width: 20%;
+    }
+
+    header .left nav ul li {
+        font-size: 1.2rem;
+    }
+
+    main .thirteen .total .left {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+    }
+
+    main .thirteen .total .left .sofa {
+        margin: 2rem;
+    }
+
+    main .thirteen .total .left .sofa img {
+        width: 200px;
+    }
+
+    main .thirteen .total .right h1,
+    .price {
+        font-size: 2rem;
+    }
+
+    main .thirteen .total .right .price {
+        color: #41b7c7;
+        font-weight: bold;
+    }
+
+    main .fourteen {
+        margin: 2rem;
+    }
+
+    main .fourteen .total {
+        display: flex;
+    }
+
+    main .fifteen .chairs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main .fifteen .chairs .chair .sofa img {
+        width: 200px;
+    }
+
+    main .sixteen {
+        display: block;
+        padding-bottom: 3rem;
+    }
+
+    main .sixteen table {
+        margin: 1rem;
+        padding-bottom: 1rem;
+        border-collapse: collapse;
+        border: 2px solid rgb(140 140 140);
+        font-family: sans-serif;
+        letter-spacing: 1px;
+    }
+
+    main .sixteen table th,
+    td {
+        border: 1px solid rgb(160 160 160);
+        padding: 8px 10px;
+        text-align: center;
+    }
+
+    main .sixteen table thead {
+        background-color: #707761;
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    main .seventeen .rightall {
+        margin: 1rem;
+    }
+
+    main .seventeen .rightall .profiles .top,
+    .middle,
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .seventeen .rightall .profiles .profile {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        place-items: center;
+        width: 60%;
+    }
+
+    main .seventeen .rightall .profiles .profile .left img {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+
+    header .left {
+        margin: 0;
+        padding: 2rem;
+    }
+
+    header .left .title img {
+        width: 90px;
+        padding-right: 0.7rem;
+    }
+
+    header .left .title h2 {
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    header .left .search {
+        margin: 0;
+        width: 25%;
+    }
+
+    header .left nav li {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    main .thirteen .total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    main .thirteen .total .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .thirteen .total .left .sofa img {
+        width: 100px;
+    }
+
+    main .thirteen .total .middle {
+        margin: 0;
+        width: 70%;
+    }
+
+    main .thirteen .total .middle img {
+        width: 70%;
+    } 
+    
+    main .fourteen .total {
+        display: flex;
+        justify-content: center;
+    }
+
+    main .fifteen .chairs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    main .fifteen .chairs .chair {
+        margin: 1rem;
+    }
+
+    main .seventeen {
+        margin-bottom: 10rem;
+    }
+
+    main .seventeen .total .rightall .profiles .profile .right {
+        padding: 0 1rem;
+    }
+
+    main .seventeen .total .rightall .profiles .top {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    main .seventeen .total .rightall .profiles .middle {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    main .seventeen .total .rightall .profiles .bottom {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    main .seventeen .total .rightall .profiles .profile .left img {
+        width: 40px;
+    }
+
+}
